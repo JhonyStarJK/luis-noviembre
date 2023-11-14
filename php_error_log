@@ -1,0 +1,386 @@
+[09-Nov-2022 00:44:45 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(15): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(191): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[09-Nov-2022 01:02:40 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\vistas\modulos\index.php on line 11
+[09-Nov-2022 01:02:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\vistas\modulos\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\vistas\modulos\index.php on line 11
+[09-Nov-2022 01:03:00 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[09-Nov-2022 01:03:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\vistas\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[09-Nov-2022 01:03:41 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[09-Nov-2022 01:03:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\vistas\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[09-Nov-2022 01:04:16 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[09-Nov-2022 01:04:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\vistas\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\vistas\index.php on line 11
+[08-Nov-2022 22:26:18 America/Bogota] PHP Warning:  preg_match(): Compilation failed: invalid range in character class at offset 29 in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 126
+[08-Nov-2022 22:26:18 America/Bogota] PHP Warning:  copy(\\DESKTOP-1J7J2NQ\epson20): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 372
+[08-Nov-2022 22:26:18 America/Bogota] PHP Fatal error:  Uncaught Exception: Failed to copy file to printer in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php:291
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x012022-11-08...')
+#1 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(212): Mike42\Escpos\Printer->close()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\crear-venta.php(296): ControladorVentas::ctrCrearVenta()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 291
+[09-Nov-2022 04:30:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:30:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 04:30:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:30:33 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 04:30:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:30:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 04:30:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:30:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 04:31:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:31:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 04:31:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 04:31:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[08-Nov-2022 22:31:41 America/Bogota] PHP Warning:  preg_match(): Compilation failed: invalid range in character class at offset 29 in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 126
+[08-Nov-2022 22:31:41 America/Bogota] PHP Warning:  copy(\\DESKTOP-1J7J2NQ\epson20): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 372
+[08-Nov-2022 22:31:41 America/Bogota] PHP Fatal error:  Uncaught Exception: Failed to copy file to printer in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php:291
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x012022-11-08...')
+#1 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(212): Mike42\Escpos\Printer->close()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\crear-venta.php(296): ControladorVentas::ctrCrearVenta()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 291
+[09-Nov-2022 19:20:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:216
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#1 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[09-Nov-2022 19:27:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:236
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#1 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 236
+[09-Nov-2022 19:28:09 Europe/Berlin] PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 198
+[09-Nov-2022 19:28:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:236
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#1 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 236
+[09-Nov-2022 19:28:13 Europe/Berlin] PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 198
+[09-Nov-2022 19:28:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefrompng() in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:236
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#1 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 236
+[09-Nov-2022 20:08:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function imagecreatefromjpeg() in C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php:130
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\vistas\modulos\usuarios.php(271): ControladorUsuarios::ctrCrearUsuario()
+#1 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#4 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php on line 130
+[09-Nov-2022 21:05:07 Europe/Berlin] PHP Warning:  mkdir(): File exists in C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php on line 114
+[09-Nov-2022 21:07:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:12 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:14 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:15 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:17 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:20 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[09-Nov-2022 21:07:22 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[09-Nov-2022 21:07:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:07:23 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:08:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\vistas\modulos\ventas.php on line 148
+[09-Nov-2022 21:46:59 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/514/451.png): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 317
+[09-Nov-2022 21:46:59 Europe/Berlin] PHP Warning:  rmdir(vistas/img/productos/514): Directory not empty in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 318
+[09-Nov-2022 21:50:35 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/001/592.png): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 317
+[09-Nov-2022 21:50:35 Europe/Berlin] PHP Warning:  rmdir(vistas/img/productos/001): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 318
+[09-Nov-2022 15:56:31 America/Bogota] PHP Warning:  preg_match(): Compilation failed: invalid range in character class at offset 29 in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 126
+[09-Nov-2022 15:56:31 America/Bogota] PHP Warning:  copy(\\DESKTOP-1J7J2NQ\epson20): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 372
+[09-Nov-2022 15:56:31 America/Bogota] PHP Fatal error:  Uncaught Exception: Failed to copy file to printer in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php:291
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x012022-11-09...')
+#1 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(209): Mike42\Escpos\Printer->close()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\crear-venta.php(296): ControladorVentas::ctrCrearVenta()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 291
+[09-Nov-2022 15:57:18 America/Bogota] PHP Warning:  preg_match(): Compilation failed: invalid range in character class at offset 29 in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 126
+[09-Nov-2022 15:57:18 America/Bogota] PHP Warning:  copy(\\DESKTOP-1J7J2NQ\epson20): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 372
+[09-Nov-2022 15:57:18 America/Bogota] PHP Fatal error:  Uncaught Exception: Failed to copy file to printer in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php:291
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x012022-11-09...')
+#1 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(209): Mike42\Escpos\Printer->close()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\crear-venta.php(296): ControladorVentas::ctrCrearVenta()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 291
+[10-Nov-2022 22:50:06 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:12 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:12 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:13 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:59 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:50:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:51:08 Europe/Berlin] PHP Warning:  require_once(controladores/plantilla.controlador.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:51:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controladores/plantilla.controlador.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\pos-PHP8\index.php:11
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\index.php on line 11
+[10-Nov-2022 22:54:09 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/001/238.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 317
+[10-Nov-2022 22:54:09 Europe/Berlin] PHP Warning:  rmdir(vistas/img/productos/001): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 318
+[11-Nov-2022 01:26:54 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/001/695.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 194
+[11-Nov-2022 01:26:54 Europe/Berlin] PHP Warning:  imagejpeg(vistas/img/productos/001/587.jpg): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 222
+[11-Nov-2022 01:27:02 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/001/587.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 317
+[11-Nov-2022 01:27:02 Europe/Berlin] PHP Warning:  rmdir(vistas/img/productos/001): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 318
+[11-Nov-2022 01:27:29 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:40
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(40): getimagesize('')
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(291): ControladorProductos::ctrCrearProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 40
+[11-Nov-2022 02:21:20 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:40
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(40): getimagesize('')
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(291): ControladorProductos::ctrCrearProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 40
+[11-Nov-2022 02:52:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[11-Nov-2022 02:52:35 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[11-Nov-2022 02:52:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 508
+[11-Nov-2022 02:52:38 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php on line 513
+[11-Nov-2022 14:26:19 America/Bogota] PHP Warning:  preg_match(): Compilation failed: invalid range in character class at offset 29 in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 126
+[11-Nov-2022 14:26:19 America/Bogota] PHP Warning:  copy(\\DESKTOP-1J7J2NQ\epson20): Failed to open stream: No such file or directory in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 372
+[11-Nov-2022 14:26:19 America/Bogota] PHP Fatal error:  Uncaught Exception: Failed to copy file to printer in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php:291
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php(173): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalizeWin('\e@\ea\x012022-11-11...')
+#1 C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\Printer.php(503): Mike42\Escpos\PrintConnectors\WindowsPrintConnector->finalize()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(212): Mike42\Escpos\Printer->close()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\crear-venta.php(296): ControladorVentas::ctrCrearVenta()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\extensiones\vendor\mike42\escpos-php\src\Mike42\Escpos\PrintConnectors\WindowsPrintConnector.php on line 291
+[11-Nov-2022 22:06:35 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'pos' in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\ventas.modelo.php(187): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(683): ModeloVentas::mdlSumaTotalVentas('ventas')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\inicio\cajas-superiores.php(7): ControladorVentas::ctrSumaTotalVentas()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\modulos\inicio.php(31): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#8 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[11-Nov-2022 22:06:37 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'pos' in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\ventas.modelo.php(187): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\ventas.controlador.php(683): ModeloVentas::mdlSumaTotalVentas('ventas')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\inicio\cajas-superiores.php(7): ControladorVentas::ctrSumaTotalVentas()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\modulos\inicio.php(31): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#8 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[11-Nov-2022 22:06:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'pos' in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\categorias.modelo.php(50): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\categorias.controlador.php(76): ModeloCategorias::mdlMostrarCategorias('categorias', NULL, NULL)
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\categorias.php(74): ControladorCategorias::ctrMostrarCategorias(NULL, NULL)
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[14-Nov-2022 18:46:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(15): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(196): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[14-Nov-2022 21:34:47 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:34:47 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): &quot;C:\xampp\tmp\phpDC9D.tmp&quot; is not a valid JPEG file in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:34:47 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: imagecopyresized(): Argument #2 ($src_image) must be of type GdImage, bool given in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:220
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(220): imagecopyresized(Object(GdImage), false, 0, 0, 0, 0, 500, 500, 800, 800)
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 220
+[14-Nov-2022 21:34:54 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/009/873.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 194
+[14-Nov-2022 21:34:54 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:34:54 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): &quot;C:\xampp\tmp\phpF91F.tmp&quot; is not a valid JPEG file in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:34:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: imagecopyresized(): Argument #2 ($src_image) must be of type GdImage, bool given in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:220
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(220): imagecopyresized(Object(GdImage), false, 0, 0, 0, 0, 500, 500, 800, 800)
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 220
+[14-Nov-2022 21:35:15 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/009/873.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 194
+[14-Nov-2022 21:35:15 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:35:15 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): &quot;C:\xampp\tmp\php4ACA.tmp&quot; is not a valid JPEG file in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:35:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: imagecopyresized(): Argument #2 ($src_image) must be of type GdImage, bool given in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:220
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(220): imagecopyresized(Object(GdImage), false, 0, 0, 0, 0, 500, 500, 800, 800)
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 220
+[14-Nov-2022 21:36:04 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/009/873.jpg): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 194
+[14-Nov-2022 21:36:12 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): gd-jpeg: JPEG library reports unrecoverable error: Not a JPEG file: starts with 0x89 0x50 in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:36:12 Europe/Berlin] PHP Warning:  imagecreatefromjpeg(): &quot;C:\xampp\tmp\php2703.tmp&quot; is not a valid JPEG file in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 216
+[14-Nov-2022 21:36:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: imagecopyresized(): Argument #2 ($src_image) must be of type GdImage, bool given in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php:220
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php(220): imagecopyresized(Object(GdImage), false, 0, 0, 0, 0, 500, 500, 800, 800)
+#1 C:\xampp\htdocs\pos-PHP8\vistas\modulos\productos.php(495): ControladorProductos::ctrEditarProducto()
+#2 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(172): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#5 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 220
+[14-Nov-2022 21:36:43 Europe/Berlin] PHP Warning:  unlink(vistas/img/productos/009/421.png): No such file or directory in C:\xampp\htdocs\pos-PHP8\controladores\productos.controlador.php on line 194
+[15-Nov-2022 17:26:18 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(15): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(196): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[16-Nov-2022 03:55:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php:9
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\conexion.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(15): Conexion::conectar()
+#2 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin')
+#3 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#4 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(196): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#7 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\conexion.php on line 9
+[20-Nov-2022 04:43:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'pos.usuarios' doesn't exist in engine in C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php:19
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'Luis')
+#2 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(196): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php on line 19
+[20-Nov-2022 04:43:32 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1932 Table 'pos.usuarios' doesn't exist in engine in C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php:19
+Stack trace:
+#0 C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php(19): PDOStatement->execute()
+#1 C:\xampp\htdocs\pos-PHP8\controladores\usuarios.controlador.php(22): ModeloUsuarios::mdlMostrarUsuarios('usuarios', 'usuario', 'admin')
+#2 C:\xampp\htdocs\pos-PHP8\vistas\modulos\login.php(44): ControladorUsuarios::ctrIngresoUsuario()
+#3 C:\xampp\htdocs\pos-PHP8\vistas\plantilla.php(196): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\pos-PHP8\controladores\plantilla.controlador.php(7): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\pos-PHP8\index.php(26): ControladorPlantilla::ctrPlantilla()
+#6 {main}
+  thrown in C:\xampp\htdocs\pos-PHP8\modelos\usuarios.modelo.php on line 19
